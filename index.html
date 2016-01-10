@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <title>Food Allergies</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Fonts from Google -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    
+    </head>
+    
+    <body>
+        <header class="row">
+            
+            <nav class="navbar navbar-default">
+    
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand" href="index.html">Food Allergies</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.hilaryseselja.com">hilaryseselja.com</a></li>
+                </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        
+        </header>
+        
+        
+        <div class="row jumbotron">
+            <div class="container-fluid text-center">
+            <div class="col-xs-12">
+                <img class="hero" src="images/8_foods_img.png" alt="8 allergy foods, milk, eggs, peanuts, tree nuts, wheat, soy, fish, and shellfish." />
+                <div class="header-text">
+                     <h1>8 foods account for 90% of all food allergy reactions.</h1>
+                    <p>Milk, eggs, peanuts, tree nuts, wheat, soy, fish, and shellfish.</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        
+        <div class="container-fluid text-center">
+        
+            <div class="row stats stats-1">
+                <div class="col-xs-12 col-sm-7 col-md-8 stat-box">
+                    <div class="chart-wrapper">
+                    <h2>Food Allergy prevalence - percentage of the US population</h2>
+                        <canvas id="allergy-allergens" class="polar"></canvas>
+                        </div>
+                    <ul class="list-unstyled chart-figures">
+                        <li>Peanut - 1.3%,</li>
+                        <li>Tree nuts - 0.6%,</li>
+                        <li>Fish - 0.4%,</li>
+                        <li>Crustaceans - 1.2%,</li>
+                        <li>Milk and egg - 0.4%,</li>
+                        <li>Soy - 0.1%,</li>
+                        <li>Wheat - 0.1%.</li>
+                    </ul>
+                    </div>
+                
+                <div class="col-xs-12 col-sm-5 col-md-4 stat-box alternate">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="chart-wrapper">
+                            <img class="doughnut-icon" src="images/baby.png" alt="baby icon" />
+                            <canvas id="allergy-babies" class="doughnut"></canvas>
+                            </div>
+                    <p>10% of Australian babies have a food allergy by 12 months.</p>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        <div class="chart-wrapper">
+                            <img class="doughnut-icon" src="images/adult.png" alt="adult icon" />
+                            <canvas id="allergy-adults" class="doughnut"></canvas>
+                            </div>
+                    <p>By adulthood only 1.3% of adults still have a food allergy.</p>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+            
+            
+            <div class="row stats stats-2">
+                <div class="col-xs-12 col-md-4 stat-box">
+                    <img class="pie-icon" src="images/cake.png" alt="cake icon" />
+                    <canvas id="allergy-cake" class="pie"></canvas>       
+                    <p>80% of babies with an egg allergy can eat egg baked into cake.</p>
+                    </div>
+                <div class="col-xs-12 col-md-4 stat-box alternate">   
+                    <img class="pie-icon" src="images/peanuts.png" alt="peanuts icon" />
+                    <canvas id="allergy-peanut" class="pie"></canvas>
+                    <p>Peanut is the most common allergen affecting 3% of children.</p>
+                    </div>
+                <div class="col-xs-12 col-md-4 stat-box">
+                    <canvas id="allergy-future" class="bar"></canvas>
+                    <p>In the next 50 years the number of Australian patients affected by allergic diseases is expected to increase from 4.1 million to 7.7 million. </p>
+                    </div>
+            </div> 
+            
+            
+            <div class="row stats source">
+                <div class="col-xs-12">
+                    <p>Food Allergy Statistics collated from <a href="http://www.allergy.org.au">www.allergy.org.au</a>, <a href="http://www.foodallergy.org">www.foodallergy.org</a> and <a href="http://calorielab.com/news/2011/01/01/big-8-food-allergies/">www.calorielab.com</a></p>
+                </div>
+            </div>
+            
+            </div><!-- end .container-fluid -->
+                
+                
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+        <script src="bower_components/Chart.js/Chart.js"></script>
+        <script src="js/food-allergies.js"></script>
+    
+    </body>
+</html>

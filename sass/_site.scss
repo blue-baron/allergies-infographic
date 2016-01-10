@@ -1,0 +1,88 @@
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-left: -9979px;
+    margin-right: -9979px;
+    padding-left: 9999px;
+    padding-right: 9999px;    
+}
+.jumbotron {
+    background: lighten($brand-info, 10%);
+    margin-left: -9999px;
+    margin-right: -9999px;
+    padding-left: 9999px;
+    padding-right: 9999px;
+    margin-bottom: 0;
+    
+    .hero {
+        width: 50%;
+        //margin: 0 auto;
+        float: left;
+    }
+}
+.chart-figures {
+    li {
+        display: inline-block;
+    }
+}
+.stats {
+    margin-left: -9979px;
+    margin-right: -9979px;
+    padding-left: 9999px;
+    padding-right: 9999px;   
+}
+.stat-box {
+    //border: $border-default; 
+    padding: 40px 20px 20px;
+    p {
+        padding: 20px;
+    }
+    &.alternate {
+        background: lighten($brand-success, 10%); 
+    }
+}
+.stats-2 {
+    background: lighten($brand-success, 5%);
+}
+.source {
+    font-size: $font-size-small; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+canvas {
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    
+    &.doughnut {
+         margin: 0 0 0 -30%;  
+    }
+}
+
+.chart-wrapper {
+    position: relative;
+    //background: lighten($brand-success, 10%);
+    
+    
+}
+canvas.bar {
+   width: 98% !important;    
+}
+
+canvas.pie {
+    margin-left: -5%;   
+}
+.doughnut-icon {
+    position: absolute;
+    max-width: 25%;
+    top: 15%;
+    right: 5%;
+    z-index: 10;
+}
+.pie-icon {
+    max-width: 50%;
+    margin: 0 auto 20px;
+}
