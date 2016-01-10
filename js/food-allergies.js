@@ -6,6 +6,7 @@ Chart.defaults.global.tooltipTemplate = "<%if (label){%><%=label%> <%}%>";
 
 
 //CHART INSTANCES
+//Chart 1 - Percentage of the population with food allergies.
 var chartAllergens = $("#allergy-allergens").get(0).getContext("2d");
 var dataAllergens = {
     labels: ["Peanuts", "Tree Nuts", "Fish", "Shellfish", "Milk & Egg", "Soy", "Wheat"],
@@ -130,9 +131,6 @@ var dataFuture = {
     ]
 };
 
-new Chart(chartFuture).Line(dataFuture, {
-    //segmentShowStroke : false
-});
 
 
 
