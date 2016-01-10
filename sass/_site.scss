@@ -1,8 +1,13 @@
 body {
     max-width: 1000px;
     margin: 0 auto;
+    overflow-x: hidden;
 }
-
+h2 {
+  @media (max-width: 710px) {
+    font-size: floor(($font-size-base * 1.6))   
+    }   
+}
 .navbar {
     margin-left: -9979px;
     margin-right: -9979px;
@@ -18,10 +23,23 @@ body {
     margin-bottom: 0;
     
     .hero {
-        width: 50%;
-        //margin: 0 auto;
-        float: left;
+        width: 80%;
+        margin: 0 auto 20px; 
     }
+    @media (max-width: 710px) {
+        h1 {
+            font-size: ceil(($font-size-base * 2.0));
+        }
+    }
+    @media (min-width: 710px) {
+            .hero {
+                width: 40%;
+                float: left;
+            }
+            h1, p {
+                margin-left: 40%;
+            }   
+        }
 }
 .chart-figures {
     li {
@@ -61,12 +79,8 @@ canvas {
          margin: 0 0 0 -30%;  
     }
 }
-
 .chart-wrapper {
     position: relative;
-    //background: lighten($brand-success, 10%);
-    
-    
 }
 canvas.bar {
    width: 98% !important;    
