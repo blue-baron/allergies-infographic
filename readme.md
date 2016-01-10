@@ -3,7 +3,7 @@
 An illustrated inforgraphic demonstrating interactive data visualisation. This page was built with the [bootstrap framework](http://getbootstrap.com/) and utilizes [chart.js](http://www.chartjs.org) to create interactive charts.
 
 ##Demo Site
-[hilaryseselja.com/food-allergies](http://www.hilaryseselja.com/food-allergies)
+[hilaryseselja.com/food-allergies-demo](http://www.hilaryseselja.com/food-allergies-demo/)
 
 ##HTML
 [index.html](https://github.com/blue-baron/allergies-infographic/blob/master/index.html) 
